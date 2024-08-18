@@ -1,0 +1,25 @@
+<nav class="flex justify-between h-full">
+    <section class="flex items-center w-1/3">
+        <button (click)="toggleTheme()"
+            class="group h-7 w-7 rounded-full border-2 border-theme-green dark:border-theme-beige hover:border-opacity-50 dark:hover:border-theme-beige-lighter transition">
+            <span *ngIf="!isDarkTheme"
+                class="material-symbols-outlined text-theme-green group-hover:text-opacity-50 text-2xl transition"
+                style="transform: translate(-0.4px, -5px);">dark_mode</span>
+            <span *ngIf="isDarkTheme"
+                class="material-symbols-outlined dark:text-theme-beige dark:group-hover:text-theme-beige-lighter text-xl transition"
+                style="transform: translate(0, -1px);">light_mode</span>
+        </button>
+    </section>
+    <section class="flex full-center mb-1 gap-2 w-1/3">
+        <a *ngFor="let route of filteredNavData" routerLink="{{route.link}}"
+            class="border-b border-theme-green-100 dark:border-theme-beige transform hover:text-theme-black/50 dark:hover:text-theme-beige-lighter hover:-translate-y-[1px] transition-all">{{route.name}}</a>
+    </section>
+    <section class="flex justify-end items-center w-1/3 gap-2">
+        <div id="profile picture">
+            <span routerLink="/register"
+                class="material-symbols-outlined text-3xl cursor-pointer hover:text-theme-black/50 dark:hover:text-theme-beige-lighter transition">
+                account_circle
+            </span>
+        </div>
+    </section>
+</nav>

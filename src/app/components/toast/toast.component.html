@@ -1,0 +1,6 @@
+<div [ngClass]="categoryClass" class="toast-container">
+    <div class="flex full-center h-full w-fit p-1 drop-shadow-2xl">
+        <icons *ngIf="category" [category]="category" class="h-5 w-5" />
+    </div>
+    <div [ngClass]="categoryClass" class="border-l-2 p-1 max-h-full w-full text-center">{{ message }}</div>
+</div>

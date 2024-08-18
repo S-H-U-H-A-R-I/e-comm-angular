@@ -1,0 +1,56 @@
+.input-field {
+    @apply
+        border-b-2 
+        border-theme-green 
+        dark:border-theme-beige 
+        placeholder:text-theme-green-100/50 
+        dark:placeholder:text-theme-beige/50 
+        focus-visible:border-theme-green-100 
+        dark:focus-visible:border-theme-beige-lighter 
+        focus-visible:placeholder:text-theme-green-100/80 
+        dark:focus-visible:placeholder:text-theme-beige/80 
+        bg-transparent 
+        w-full 
+        text-center 
+        outline-none
+        transition
+
+}
+
+.submit-button {
+    @apply 
+        border 
+        border-theme-green 
+        dark:border-theme-beige 
+        text-theme-green 
+        dark:text-theme-beige w-1/2 
+        hover:border-theme-green-100 
+        dark:hover:border-theme-beige-lighter 
+        hover:text-theme-green-100 
+        dark:hover:text-theme-beige-lighter 
+        focus-visible:text-theme-green-100 
+        disabled:text-theme-green-100/20 
+        dark:disabled:text-theme-beige/20
+        disabled:border-theme-green-100/20
+        dark:disabled:border-theme-beige/20
+        transition
+}
+
+#signin-card {
+    @apply 
+        bg-theme-beige 
+        dark:bg-theme-green 
+        h-1/2 
+        w-4/5 
+        md:w-3/4 
+        lg:w-2/3 
+        xl:w-3/5 
+        2xl:w-1/2 
+        gap-10 
+        shadow-xl 
+        transition 
+        flex 
+        flex-col 
+        items-center 
+        py-10
+}
